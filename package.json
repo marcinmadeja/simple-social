@@ -1,0 +1,50 @@
+{
+  "name": "mtg-dashboard",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "^1.4.3",
+    "@material-ui/icons": "^2.0.1",
+    "axios": "^0.18.0",
+    "classnames": "^2.2.6",
+    "fetch-mock": "^6.5.2",
+    "history": "^4.7.2",
+    "install": "^0.12.1",
+    "jss": "^9.8.7",
+    "lodash": "^4.17.10",
+    "nock": "^9.6.0",
+    "normalize.css": "^8.0.0",
+    "npm": "^6.3.0",
+    "prop-types": "^15.6.2",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "react-redux": "^5.0.7",
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "1.1.4",
+    "redux": "^4.0.0",
+    "redux-devtools-extension": "^2.13.5",
+    "redux-thunk": "^2.3.0",
+    "styled-components": "^3.4.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.6",
+    "chai": "^4.1.2",
+    "enzyme": "^3.4.1",
+    "enzyme-adapter-react-16": "^1.2.0",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^17.0.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-react": "^7.10.0",
+    "jest-styled-components": "^5.0.1",
+    "react-test-renderer": "^16.4.2",
+    "redux-mock-store": "^1.5.3"
+  }
+}
