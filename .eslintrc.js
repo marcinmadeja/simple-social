@@ -66,6 +66,7 @@ module.exports = {
       "import/no-extraneous-dependencies": 0,
       "import/no-named-as-default": 0,
       "react/destructuring-assignment": 0,
-      "no-useless-computed-key": 0
+      "no-useless-computed-key": 0,
+      "react/jsx-one-expression-per-line": 0
     }
   }

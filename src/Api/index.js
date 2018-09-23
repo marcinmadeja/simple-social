@@ -1,4 +1,3 @@
-import * as utils from './utils';
-import * as cards from './cards';
+import * as api from './api';
 
-export default { utils, cards };
+export default api;

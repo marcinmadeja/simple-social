@@ -10,7 +10,7 @@ const Root = () => {
         <Route
           key={route.path}
           path={route.path}
-          render={route.component}
+          component={route.component}
           exact={route.exact}
         />
       ))}
