@@ -5,7 +5,7 @@ import styled from 'styled-components';
 import { SHADOWS, COLORS } from 'config/theme';
 
 const InfoStyled = styled.div`
-  display: inline-flex;
+  display: flex;
   align-items: center;
   min-width: 200px;
   height: 68px;

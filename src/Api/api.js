@@ -10,3 +10,8 @@ export const getPosts = async () => {
   const response = await request('posts');
   return response.data;
 };
+
+export const getPost = async (id) => {
+  const response = await request(`posts/${id}`);
+  return response.data;
+};

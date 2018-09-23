@@ -90,7 +90,7 @@ const PostItem = ({
           user{userId}
         </User>
 
-        <LinkButton to={`posts/${id}`}>See more</LinkButton>
+        <LinkButton to={`post/${id}`}>See more</LinkButton>
       </Content>
     </PostItemStyled>
   );

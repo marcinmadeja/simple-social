@@ -1,14 +1,9 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { WIDTH, MAX_WIDTH, GUTTER } from 'constants/style';
+import { ContentBase } from 'baseStyled';
 
-const StyledMainContent = styled.div`
-  max-width: ${MAX_WIDTH};
-  width: ${WIDTH};
-  margin: 10px auto 0;
-  padding: ${GUTTER};
-`;
+const StyledMainContent = styled(ContentBase)``;
 
 const MainContent = ({ children }) => {
   return (
