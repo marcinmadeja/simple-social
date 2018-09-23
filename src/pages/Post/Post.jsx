@@ -1,18 +1,20 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import api from 'Api';
 import styled from 'styled-components';
 import { ContentBase } from 'baseStyled';
 import { GUTTER } from 'constants/style';
 import { SHADOWS } from 'config/theme';
 import Info from 'components/Info';
+import PostDetails from 'components/PostDetails';
 
-const PostDetailsStyled = styled(ContentBase)`
+const PostStyled = styled(ContentBase)`
   background: #fff;
   padding: ${GUTTER}px;
   box-shadow: ${SHADOWS[1]};
 `;
 
-class PostDetails extends Component {
+class Post extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -70,14 +72,22 @@ class PostDetails extends Component {
     const { postRequest, postFailure, post } = this.state;
 
     return (
-      <PostDetailsStyled>
+      <PostStyled>
         {postRequest && <Info progress>Fetching data</Info>}
         {postFailure && <Info>Data was not fetched</Info>}
         {this.wasPostNotFound() && <p>test</p>}
-        {this.canDisplayDetails() && <p>details</p>}
-      </PostDetailsStyled>
+        {this.canDisplayDetails() && <PostDetails {...post} />}
+      </PostStyled>
     );
   }
 }
 
-export default PostDetails;
+Post.propTypes = {
+  match: PropTypes.object,
+};
+
+Post.defaultProps = {
+  match: { params: { id: 0 } },
+};
+
+export default Post;

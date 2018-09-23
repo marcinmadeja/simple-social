@@ -1,5 +1,5 @@
 import HomePage from 'pages/HomePage';
-import PostDetails from 'pages/PostDetails';
+import Post from 'pages/Post';
 import * as routes from 'routes/routeTypes';
 
 export const mainRoutes = [
@@ -12,7 +12,7 @@ export const mainRoutes = [
   {
     exact: true,
     path: routes.POST_DETAILS,
-    component: PostDetails,
+    component: Post,
     name: 'Post details',
   },
 ];

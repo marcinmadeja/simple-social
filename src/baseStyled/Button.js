@@ -4,6 +4,7 @@ import { SHADOWS } from 'config/theme';
 export const ButtonBase = styled.button`
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   padding: 10px 20px;
   box-shadow: ${SHADOWS[4]};
 

@@ -1,8 +1,10 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import { SHADOWS, COLORS } from 'config/theme';
 import { GUTTER } from 'constants/style';
+import { ButtonBase } from 'baseStyled';
 import AccountCircle from '@material-ui/icons/AccountCircle';
 
 const PostItemStyled = styled.div`
@@ -51,27 +53,12 @@ const User = styled.div`
   }
 `;
 
-const LinkButton = styled(Link)`
-  display: inline-flex;
-  align-items: center;
-  padding: 10px 20px;
-  box-shadow: ${SHADOWS[4]};
-
-  font-size: 16px;
-  font-weight: 500;
-  text-transform: uppercase;
-  transition: 0.25s all;
-
-  &:hover {
-    box-shadow: ${SHADOWS[6]};
-  }
-`;
+const LinkButton = ButtonBase.withComponent(Link);
 
 const PostItem = ({
   userId,
   id,
   title,
-  body,
 }) => {
   return (
     <PostItemStyled>
@@ -94,6 +81,12 @@ const PostItem = ({
       </Content>
     </PostItemStyled>
   );
+};
+
+PostItem.propTypes = {
+  userId: PropTypes.number.isRequired,
+  id: PropTypes.number.isRequired,
+  title: PropTypes.string.isRequired,
 };
 
 export default PostItem;
