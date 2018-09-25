@@ -7,6 +7,8 @@ export const ButtonBase = styled.button`
   justify-content: center;
   padding: 10px 20px;
   box-shadow: ${SHADOWS[4]};
+  background: none;
+  border: none;
 
   font-size: 16px;
   font-weight: 500;

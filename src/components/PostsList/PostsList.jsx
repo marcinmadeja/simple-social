@@ -8,10 +8,10 @@ import { media } from 'styles/media';
 const PostsListStyled = styled.div`
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  margin: 0 -${GUTTER / 2}px;
 
   & > * {
-    width: calc(33.3333% - ${GUTTER * 2}px);
+    width: calc(33.3333% - ${GUTTER}px);
     margin: 0 ${GUTTER / 2}px ${GUTTER}px;
 
     ${media.lessThan('tablet')`

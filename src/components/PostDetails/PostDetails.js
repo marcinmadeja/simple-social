@@ -9,7 +9,6 @@ const Header = styled.h2`
   text-align: center;
 `;
 
-
 const Title = styled.h3`
   margin: 0 0 20px;
   font-size: 20px;

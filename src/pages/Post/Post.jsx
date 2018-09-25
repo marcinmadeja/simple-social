@@ -49,7 +49,9 @@ class Post extends Component {
   }
 
   postRequestFailure(error) {
+    error = error || {};
     const status = error.status;
+    this.props.openModal(error.message || status);
 
     this.setState({
       postRequest: false,
@@ -84,6 +86,7 @@ class Post extends Component {
 
 Post.propTypes = {
   match: PropTypes.object,
+  openModal: PropTypes.func.isRequired,
 };
 
 Post.defaultProps = {
